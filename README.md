@@ -34,35 +34,36 @@ This repository can also be used as starter repository for building PHP projects
 - `http://localhost:8080\util\phpinfo.php` in your host computer browser brings up the phpinfo file.
 
 # Use `db` vm
-- `vagrant ssh db` from the directory with this repository to ssh into your PostgreSQL server
-- Accessing PostgreSQL from `db` vm:
+* `vagrant ssh db` from the directory with this repository to ssh into your PostgreSQL server
+* Accessing PostgreSQL from `db` vm:
 
-	> sudo su postgres
-	bash-4.1$ psql -d sampledb
-	could not change directory to "/home/vagrant"
-	psql (8.4.13)
-	Type "help" for help.
+```bash
+> sudo su postgres
+bash-4.1$ psql -d sampledb
+could not change directory to "/home/vagrant"
+psql (8.4.13)
+Type "help" for help.
 
-	sampledb=# set search_path = sample, pg_catalog;
-	SET
-	sampledb=# \du
-	                       List of roles
-	      Role name       |  Attributes  |      Member of
-	----------------------+--------------+---------------------
-	 postgres             | Superuser    | {}
-	                      : Create role
-	                      : Create DB
-	 sample_user          |              | {sampledb_dbo_role}
-	 sampledb_dbo_role    | Cannot login | {}
-	 sampledb_select_role | Cannot login | {}
+sampledb=# set search_path = sample, pg_catalog;
+SET
+sampledb=# \du
+                       List of roles
+      Role name       |  Attributes  |      Member of
+----------------------+--------------+---------------------
+ postgres             | Superuser    | {}
+                      : Create role
+                      : Create DB
+ sample_user          |              | {sampledb_dbo_role}
+ sampledb_dbo_role    | Cannot login | {}
+ sampledb_select_role | Cannot login | {}
 
-	                    List of relations
-	 Schema |          Name          |   Type   |    Owner
-	--------+------------------------+----------+-------------
-	 sample | contact                | table    | postgres
-	 sample | contact_contact_id_seq | sequence | sample_user
-	(2 rows)
-
+                    List of relations
+ Schema |          Name          |   Type   |    Owner
+--------+------------------------+----------+-------------
+ sample | contact                | table    | postgres
+ sample | contact_contact_id_seq | sequence | sample_user
+(2 rows)
+```
 
 # Who
 This project was put together by Greg Elin at the FCC. 
