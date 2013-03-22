@@ -15,11 +15,11 @@ This repository can also be used as starter repository for building PHP projects
 
 # Dependencies
 1. A computer onto which you can install software. (Tested on Mac, and Linux).
-2. Download & Install VirtualBox
-3. Download & Install Vagrant
+2. Download & Install `VirtualBox`
+3. Download & Install `Vagrant` from http://vagrantup.com
 
 # Install
-1. Clone out vagrant_php-pgsql project git clone git@github.com:gregelin/vagrant_php-pgsql.git
+1. Clone out vagrant_php-pgsql project `git clone git@github.com:gregelin/vagrant_php-pgsql.git`
 2. Go into vagrant_php-pgsql directory and boot up the vm (in terminal) `cd vagrant_php-pgsql && vagrant up`
 3. Be patient while vagrant downloads the CentOS base-box and configures your multi-vm environment. This will take a long time the first time because you need to download the CentOS. 
 4. Get into the virtual machine (vm) via ssh vagrant ssh
