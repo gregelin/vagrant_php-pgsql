@@ -66,6 +66,6 @@ sampledb=# \du
 ```
 
 # Who
-This project was put together by Greg Elin at the FCC. 
+This project was put together by Greg Elin at the FCC with learnings from http://OpenDataDevOps.org project.
 
 
