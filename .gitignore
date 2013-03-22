@@ -1,0 +1,14 @@
+# Git Ignore File
+
+# Directories
+docs/_ignore/*
+
+# Vagrant files
+.vagrant
+
+# Apple files
+.DS_Store
+*.key
+
+
+
